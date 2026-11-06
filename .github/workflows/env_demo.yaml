@@ -31,7 +31,8 @@ jobs:
   print:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Application: $APP_NAME"
-      - run: echo "Version: $APP_VERSION"
-      - run: echo "Message: $MESSAGE"
+      - run: |
+          echo "Application: $APP_NAME"
+          echo "Version: $APP_VERSION"
+          echo "Message: $MESSAGE"
 
